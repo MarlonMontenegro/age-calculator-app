@@ -1,0 +1,84 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+:root {
+
+    /*Font style*/
+    --font-size-32-px: 32px;
+    --font-poppins: 'Poppins', sans-serif;
+
+    /* PRIMARY COLORS */
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+
+    /* NEUTRAL COLORS */
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    -Off-black: hsl(0, 0%, 8%);
+}
+
+/* body */
+
+body {
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-32-px);
+    background-color: var(--Light-grey);
+
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main */
+
+main {
+    background-color: var(--White);
+    max-width: 840px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 24px 24px 200px 24px;
+}
+
+.container-input {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+    padding: 10px;
+}
+
+.text-box {
+    display: flex;
+    width: 140px;
+    padding: 5px 24px 5px 30px;
+    margin: 8px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    border: 1px solid #DCDCDC;
+    color: var(--Light-grey);
+}
+
+.title {
+    display: flex;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Light-grey);
+}
+
+.container-box {
+    display: flex;
+    margin-left: 10px;
+}
