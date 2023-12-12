@@ -15,37 +15,40 @@
         <section class="days">
             <h3 class="title">Day</h3>
             <div class="container-box">
-                <h2 class="text-box">DD</h2>
+                <label>
+                    <input type="text" name="day" placeholder="DD" class="text-box">
+                </label>
             </div>
         </section>
         <section class="months">
             <h3 class="title">Month</h3>
             <div class="container-box">
-                <h2 class="text-box">MM</h2>
+                <label>
+                    <input type="text" name="month" placeholder="MM" class="text-box">
+                </label>
             </div>
         </section>
         <section class="years">
             <h3 class="title">Year</h3>
             <div class="container-box">
-                <h2 class="text-box">YYYY</h2>
+                <label>
+                    <input type="text" name="year" placeholder="YYYY" class="text-box">
+                </label>
             </div>
         </section>
     </div>
-    <section>
-        <div><img src="../assets/images/icon-arrow.svg" alt="action-button-arrow"></div>
+    <section class="btn-container">
+        <div class="line"></div>
+        <button class="btn-arrow">
+            <img src="../assets/images/icon-arrow.svg" alt="action-button-arrow" >
+        </button>
     </section>
-    <section>
-        <div>--</div>
-        <h1>years</h1>
-    </section>
-    <section>
-        <div>--</div>
-        <h1>months</h1>
-    </section>
-    <section>
-        <div>--</div>
-        <h1>days</h1>
-    </section>
+
+    <div class="container-output">
+        <h1 class="display-purple">-- <span class="title-output">years</span></h1>
+        <h1 class="display-purple">-- <span class="title-output">months</span></h1>
+        <h1 class="display-purple">-- <span class="title-output">days</span></h1>
+    </div>
 </main>
 
 <!--<div class="attribution">

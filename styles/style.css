@@ -1,43 +1,42 @@
 /* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
-/*font-family: 'Poppins', sans-serif;*/
 
 :root {
-
-    /*Font style*/
+    /* Font style */
     --font-size-32-px: 32px;
     --font-poppins: 'Poppins', sans-serif;
 
-    /* PRIMARY COLORS */
+    /* Primary Colors */
     --purple: hsl(259, 100%, 65%);
-    --light-red: hsl(0, 100%, 67%);
 
-    /* NEUTRAL COLORS */
-    --White: hsl(0, 0%, 100%);
-    --Off-white: hsl(0, 0%, 94%);
-    --Light-grey: hsl(0, 0%, 86%);
-    --Smokey-grey: hsl(0, 1%, 44%);
-    -Off-black: hsl(0, 0%, 8%);
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
 }
 
-/* body */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
+
+/* Body */
 body {
     font-family: var(--font-poppins);
     font-size: var(--font-size-32-px);
-    background-color: var(--Light-grey);
-
+    background-color: var(--light-grey);
     display: flex;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-
 /* Main */
-
 main {
-    background-color: var(--White);
+    background-color: var(--white);
     max-width: 840px;
     display: flex;
     flex-direction: column;
@@ -50,35 +49,88 @@ main {
 .container-input {
     display: flex;
     align-items: flex-start;
-    gap: 32px;
-    align-self: stretch;
-    padding: 10px;
+    gap: 16px; /* Reducido el espacio entre elementos */
+    padding: 15px 100px 15px 15px;
+    flex-grow: 1;
+}
+
+.container-input label {
+    padding-left: 30px;
 }
 
 .text-box {
     display: flex;
-    width: 140px;
-    padding: 5px 24px 5px 30px;
-    margin: 8px;
-    align-items: center;
-    gap: 16px;
+    width: 135px;
+    height: 55px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 2px;
     border-radius: 8px;
     border: 1px solid #DCDCDC;
-    color: var(--Light-grey);
+    color: var(--off-black);
+    resize: none;
+    margin: 3px 8px 8px 0;
 }
+
 
 .title {
     display: flex;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px 0 0 12px;
     margin: 12px;
     font-size: 14px;
     font-weight: 700;
-    color: var(--Light-grey);
+    color: var(--smokey-grey);
+    text-transform: uppercase;
 }
 
 .container-box {
     display: flex;
-    margin-left: 10px;
 }
+
+.container-output {
+    font-weight: 800;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.container-output h1 {
+    margin: -20px;
+    padding-left: 30px;
+}
+
+.container-output span {
+    color: var(--off-black);
+}
+
+.display-purple {
+    color: var(--purple);
+}
+
+.line {
+    border: 1px solid var(--light-grey);
+    width: 570px;
+    margin-left: 40px;
+    margin-right: 55px;
+    margin-bottom: -40px;
+}
+
+.btn-container {
+    position: relative;
+    padding-top: 10px;
+}
+
+.btn-arrow {
+    background-color: var(--purple);
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    margin-right: 10px;
+    float: right;
+}
+
+/* MEDIA QUERY'S */
