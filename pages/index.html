@@ -7,40 +7,42 @@
 
     <title>Frontend Mentor | Age calculator app</title>
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
-
 </head>
 <body>
 <main>
     <div class="container-input">
         <section class="days">
-            <h3 class="title">Day</h3>
+            <h3 class="title" id="DayTitle">Day</h3>
             <div class="container-box">
                 <label>
-                    <input type="text" name="day" placeholder="DD" class="text-box">
+                    <input type="text" name="day" placeholder="DD" class="text-box" id="inputDay">
+                    <p class="error-message" id="error-inputDay">Must be a valid day</p>
                 </label>
             </div>
         </section>
         <section class="months">
-            <h3 class="title">Month</h3>
+            <h3 class="title" id="monthTitle">Month</h3>
             <div class="container-box">
                 <label>
-                    <input type="text" name="month" placeholder="MM" class="text-box">
+                    <input type="text" name="month" placeholder="MM" class="text-box" id="inputMonth">
+                    <p class="error-message" id="error-inputMonth">Must be a valid Month</p>
                 </label>
             </div>
         </section>
         <section class="years">
-            <h3 class="title">Year</h3>
+            <h3 class="title" id="titleYear">Year</h3>
             <div class="container-box">
                 <label>
-                    <input type="text" name="year" placeholder="YYYY" class="text-box">
+                    <input type="text" name="year" placeholder="YYYY" class="text-box" id="inputYear">
+                    <p class="error-message" id="error-inputYear">Must be a valid Year</p>
                 </label>
             </div>
         </section>
     </div>
     <section class="btn-container">
         <div class="line"></div>
-        <button class="btn-arrow">
-            <img src="../assets/images/icon-arrow.svg" alt="action-button-arrow" >
+        <button class="btn-arrow" onclick="getInput()">
+            <img src="../assets/images/icon-arrow.svg" alt="action-button-arrow">
         </button>
     </section>
 
